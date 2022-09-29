@@ -1,8 +1,11 @@
-#Get rid of duplicates without specifically removing any one value.
+#Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
 
-arr = [1, 1, 2, 3, 4, 4, 4, 5]
-unique = arr.uniq
-p unique
+floats = [1.3, 2.5, 11.93]
 
-arr.uniq!
-p arr
+def squares(arr)
+  arr.each do |float|
+    puts float**2
+  end 
+end
+
+squares(floats)

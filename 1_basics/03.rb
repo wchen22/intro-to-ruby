@@ -1,14 +1,15 @@
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Write a program that uses a hash to store a list of movie titles with the year they came out. Then use the puts command to make your program print out the year of each movie to the screen. 
 
-# with #odd? method 
+movies = {
+  #This is a newer JSON type style where the keys are symbols. Works with strings
+  "The Dark Knight": 2008,
+  "The Batman": 2022,
+  "Parasite": 2020,
+  #Can use older hash rocket style as well
+  :jaws => 1975,
+  :"Man of Steel" => 2013
+}
 
-new_arr = arr.select { |n| n.odd? }
-puts new_arr
-
-# with modulo operator
-
-new_arr = arr.select do |n|
-  n % 2 != 0
+movies.each do |title, year|
+  puts year
 end
-
-puts new_arr

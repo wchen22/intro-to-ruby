@@ -1,11 +1,13 @@
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Use the modulo operator, division, or a combination of both to take a 4 digit number and find the digit in the: 1) thousands place 2) hundreds place 3) tens place 4) ones place
 
-#two line solution
-arr.each do |n|
-  if n > 5 
-    puts n
-  end
-end
+number = 1933
 
-#one line solution
-arr.each { |n| puts n if n > 5 }
+digits = {
+  :thousands => number / 1000,
+  :hundreds => number % 1000 / 100,
+  # for tens and ones can skil extra % operations, e.g. tens = number % 100 / 10
+  :tens => number % 1000 % 100 / 10, 
+  :ones => number % 1000 % 100 % 10 
+}
+
+p digits

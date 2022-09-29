@@ -1,3 +1,12 @@
-# Use the each method of Array to iterate over [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], and print out each value.
+#Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+p "Wilson " + "Chen"
 
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].each { |n| puts n }
+
+first = "Wilson"
+last = "Chen"
+
+#Using string concatenation
+puts first + " " + last
+
+#Using string interpolation
+puts "#{first} #{last}"
