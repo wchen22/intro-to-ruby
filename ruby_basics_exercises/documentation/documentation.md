@@ -37,5 +37,3 @@ https://docs.ruby-lang.org/en/3.1/String.html
 
 String#rjust
 rjust(integer, padstr=' ') -> new_str
-
-9)
